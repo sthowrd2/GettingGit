@@ -14,5 +14,9 @@ def factorial2(n):
 		result*=n
 		n=n-1
 	return result	
+	
+def binomial(p,q):
+	return factorial2(p)/(factorial(q)*factorial2(p-q))
 
 print(factorial(10),factorial2(10))
+print(binomial(10,2))
